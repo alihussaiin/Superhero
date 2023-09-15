@@ -7,23 +7,23 @@ public class Superhero {
 
     private int yearCreated;
 
-    private String isHUman;
+    private boolean isHuman;
 
     private int strength;
 
     //Constructor - et objekt består af attributer
 
-    public Superhero(String secretIdentity, String superPower, int yearCreated, String isHUman, int strength) {
+    public Superhero(String secretIdentity, String superPower, int yearCreated, boolean isHuman, int strength) {
         this.secretIdentity = secretIdentity;
         this.realName = realName;
         this.superPower = superPower;
         this.yearCreated = yearCreated;
-        this.isHUman = isHUman;
+        this.isHuman = isHuman;
         this.strength = strength;
     }
 
     //Get
-    public  String getSecretIdentity() {
+    public String getSecretIdentity() {
         return secretIdentity;
     }
 
@@ -32,27 +32,57 @@ public class Superhero {
     }
 
     public String getsuperPower() {
-        return superPower
+        return superPower;
     }
 
     public int getYearCreated() {
-        return yearCreated
+        return yearCreated;
     }
 
-    public String getsisHUman() {
-        return isHUman
+    public boolean getsisHUman() {
+        return isHuman;
     }
-     public int getstrength() {
-         return strength
-     }
+
+    public int getstrength() {
+        return strength;
+    }
 
 
     //Set
 
+    public void setSecretIdentity(String secretIdentity) {
+        this.secretIdentity = secretIdentity;
+    }
 
+    public void setRealName(String realName) {
+        this.realName = realName;
+    }
 
+    public void setStrength(int strength) {
+        this.strength = strength;
+    }
 
+    public void setisHuman(boolean isHuman) {
+        this.isHuman = isHuman;
+    }
 
+    public void setyearCreated(int yearCreated) {
+        this.yearCreated = yearCreated;
+    }
 
+    public void setSuperPower(String superPower) {
+        this.superPower = superPower;
+    }
+
+    @Override
+    public String toString() {
+        return "Superhero{" +
+                "secretIdentity='" + secretIdentity + '\'' +
+                ", realName='" + realName + '\'' +
+                ", superPower='" + superPower + '\'' +
+                ", yearCreated=" + yearCreated +
+                ", isHUman='" + isHuman + '\'' +
+                ", strength=" + strength +
+                '}';
     }
 }

@@ -1,6 +1,3 @@
-import
-
-
 public class Database {
     private Superhero[] superheroes;
     private int count;
